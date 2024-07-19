@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --myRoboto:"Roboto Slab", serif;
+}
+body{
+    height: 100vh;
+    background-color: #FFF7EF;
+    background: url(digital-ride-bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+header{
+    height: 100px;
+    width: 100vw;
+    background-color: #A20A3A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    height: 70px;
+}
+.bankCarowsel{
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+}
+.wrapper{
+    height: calc(100vh - 150px);
+    padding: 2rem 10rem;
+}
+.wrapper-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #A20A3A;
+    font-size: 150px;
+}
+
+.wrapper-2 P{
+    font-family: var(--myRoboto);
+    color: rgb(255, 213, 0);
+    font-size: 45px;
+    font-weight: 500;
+    display: inline;
+    padding: 0px 50px;
+    background-color: blue;
+    line-height: 55px;
+}
+.wrapper-3 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 100px;
+    color: #000000cf;
+    font-size: 50px;
+}
+.wrapper-3 P{
+    font-family: sans-serif;
+    color: #A20A3A;
+    font-size: 33px;
+    font-weight: 600;
+}
+.wrapper-3 .bottomPara p{
+    color: #000000cf;
+}
+.loginWrapper{
+    display: none;
+}
+.login{
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login label{
+    font-family: sans-serif;
+    color: #A20A3A;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.login input{
+    font-family: sans-serif;
+    color: #000000cf;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+}
+.login .form > input:hover{
+    box-shadow: 1px 1px 10px 1px #a20a3a85;
+}
+.button-wrapper{
+    text-align: center;
+}
+button{
+    font-size: 20px;
+    font-weight: 700;
+    height: 50px;
+    padding: 0px 20px;
+    min-width: 150px;
+    color: #ffffff;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: #A20A3A;
+}
+button:hover{
+    color: #A20A3A;
+    border: 1px solid #A20A3A;
+    background-color: white;
+}
+::placeholder{
+    color: rgb(178, 178, 178);
+}
+.atmOptions{
+    display: none;
+}
+#passComment , #emailComment{
+    color: #A20A3A;
+}
+
+.waitingPage{
+    display: none;
+}
+.waitingPage .p-wrapper:nth-child(1){
+    text-align: center;
+}
+.waitingPage .p-wrapper:nth-child(1) p{
+    padding: 0px 50px;
+}
+
+#atmLangOptionsWrapper{
+    display: none;
+}
+.atmLangOptions{
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.atmLangOptions #lang{
+    width: 70%;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.atmLangOptions #lang p{
+    font-size: 35px;
+    font-weight: 500;
+    color: #A20A3A;
+}
+
+
+#atmTransactionOptionWrapper{
+    display: none;
+}
+#atmTransactionOption{
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#atmTransactionOption .buttonsDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#atmTransactionOption .buttonsDiv button:first-child{
+    height: 60px;
+    width: 400px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#atmTransactionOption .buttonsDiv button:last-child{
+    height: 60px;
+    width: 400px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#recriptConfirmationWrapper{
+    display: none;
+}
+#receiptConfirmation{
+    height: calc(100vh - 100px);
+    padding-top: 50px;
+}
+#receiptConfirmation .receiptPara{
+    text-align: center;
+    font-size: 50px;
+    color: #A20A3A;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+#receiptConfirmation .buttonsDiv{
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 100px;
+}
+
+#receiptConfirmation .buttonsDiv button{
+    height: 60px;
+    width: 250px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#receiptConfirmation .receiptPara-2{
+    text-align: center;
+    font-size: 35px;
+    color: #ffb300;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+#withdrawalPageWrapper{
+    display: none;
+}
+#withdrawalPage{
+    height: calc(100vh - 100px);
+    padding-top: 50px;
+}
+#withdrawalPage .withdrawalPara{
+    text-align: center;
+    font-size: 50px;
+    color: #A20A3A;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.withdrawalInputdiv{
+    text-align: center;
+}
+#withdrawalPage .withdrawalbuttonsDiv{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 100px;
+}
+#withdrawalPage .withdrawalbuttonsDiv button{
+    height: 60px;
+    width: 250px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.withdrawalInputdiv input{
+    font-family: sans-serif;
+    color: #000000cf;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 40px 0px;
+    text-align: center;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+}
+#withdrawalComment{
+    color: #A20A3A;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+#withdrawalStatusPageWrapper{
+    display: none;
+}
+#withdrawalStatusPage .withdrawalStatusPara{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 50px;
+    color: #A20A3A;
+    font-family: sans-serif;
+    font-weight: 600;
+}
